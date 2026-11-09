@@ -103,6 +103,27 @@
             font-size: 0.95rem;
         }
 
+        /* ===== ССЫЛКА НА ВК (СТАРТОВЫЙ ЭКРАН) ===== */
+        .vk-link {
+            margin-top: 24px;
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+            color: #64748b;
+        }
+
+        .vk-link a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .vk-link a:hover {
+            color: #1d4ed8;
+            border-bottom: 2px solid #2563eb;
+            text-shadow: 0 1px 2px rgba(37, 99, 235, 0.2);
+        }
+
         /* ===== ПАНЕЛЬ НАСТРОЕК ЦВЕТОВ ===== */
         .settings-panel {
             background: rgba(255, 255, 255, 0.95);
@@ -473,6 +494,10 @@
         </div>
 
         <button class="btn-start" onclick="startQuiz()">Начать</button>
+
+        <div class="vk-link">
+            <a href="https://vk.ru/country_tutor" target="_blank" rel="noopener noreferrer">Мы в ВКонтакте → country_tutor</a>
+        </div>
     </div>
 
     <!-- ===== ЭКРАН ЗАДАНИЯ ===== -->
